@@ -1,0 +1,17 @@
+body {
+    font-family: "Helvetica", "Lucida Grande", sans-serif;
+}
+
+p {
+    color: blue;
+    background-color: yellow;
+    font-family: monospace;
+}
+
+h1 {
+    font-family: serif;
+}
+
+h2 {
+    font-family: sans-serif;
+}
