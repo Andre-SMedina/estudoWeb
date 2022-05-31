@@ -1,0 +1,8 @@
+VScode
+
+Ctrl+K = Apagar linha
+Ctrl+\ = Abre outra janela ao lado
+
+Sites
+
+https://www.w3c.br/divulgacao/guiasreferencia/css2/

@@ -1,11 +1,17 @@
 body {
-    font-family: "Helvetica", "Lucida Grande", sans-serif;
+
 }
 
-p {
+p#p1 {
     color: blue;
     background-color: yellow;
+    background-image: url("img.jpg");
     font-family: monospace;
+    font-style: oblique;
+    text-align: center;
+    padding: 10px; /* altera o espaço das bordas */
+    line-height: 30px; /* altera altura da linha */
+    letter-spacing: 2px; /* altera espaço entre as letras */
 }
 
 h1 {
@@ -13,5 +19,5 @@ h1 {
 }
 
 h2 {
-    font-family: sans-serif;
+    font-family: "Helvetica", "Lucida Grande", sans-serif;
 }
