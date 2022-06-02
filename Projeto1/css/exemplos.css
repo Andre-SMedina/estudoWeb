@@ -34,17 +34,9 @@ p.lista {
     text-align: center;
 }
 
-ul {
-    list-style: circle;/*alterar para circulo antes de cada <li>*/
-}
-
 li {
     margin: 5px auto;
     width: 500px;
-}
-
-ol {
-    list-style: upper-alpha;/*altera para uma sequencia alfabetica antes de cada <li>*/
 }
 
 dl {
@@ -54,4 +46,23 @@ dl {
 
 h2 {
     font-family: "Helvetica", "Lucida Grande", sans-serif;
+}
+
+figure {
+    display: inline-block;
+    width: 40%;
+}
+
+img {
+    width: 100%;
+}
+
+.testep {
+    background-color: rgb(214, 66, 8);
+    width: 30%;
+}
+.testea {
+    background-color: rgb(11, 8, 214);
+    width: 40%;
+    display: inline-block;
 }
