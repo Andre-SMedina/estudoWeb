@@ -56,13 +56,3 @@ figure {
 img {
     width: 100%;
 }
-
-.testep {
-    background-color: rgb(214, 66, 8);
-    width: 30%;
-}
-.testea {
-    background-color: rgb(11, 8, 214);
-    width: 40%;
-    display: inline-block;
-}
