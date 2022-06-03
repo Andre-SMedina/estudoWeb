@@ -1,0 +1,46 @@
+.rodape {
+    text-align: center;
+    font-size: 0.7rem;
+    padding: 2em 5%;
+    
+}
+
+.rodape_logo {
+    width: 11.25em;
+    margin-bottom: 1em;
+}
+
+.rodape_infos-empresa {
+    line-height: 1.5;/*aumenta o espaço entre as linhas do texto*/
+}
+
+.rodape_secao {
+    margin-top: 2em;
+}
+
+.rodape_lista-midiasocial {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.rodape_item-midiasocial {
+    width: 2.62em;
+    margin: 0.25em;
+}
+
+.rodape_item-midiasocial img {
+    width: 100%;
+}
+
+.rodape_titulo {
+    font-size: 1.45em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 1em;
+}
+
+.rodape_lista-cursos li, .rodape_lista-outros li{
+    font-weight: 500;
+    margin: 0.625em 0;
+}
