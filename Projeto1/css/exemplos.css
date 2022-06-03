@@ -56,3 +56,24 @@ figure {
 img {
     width: 100%;
 }
+.item0 {grid-area: a0;}
+.item1 {grid-area: a1;}
+.item2 {grid-area: a2;}
+.item3 {grid-area: a3;}
+.item4 {grid-area: a4;}
+
+.main {
+    display: grid;
+    grid-template-areas: 
+    'a0 a1 a2'
+    'a0 a3 a3'
+    'a4 a4 a4 ';
+    width: 500px;
+}
+
+.main div{
+    margin: 0.5px;
+    text-align: center;
+    background-color: red;
+    border: 2px solid;
+}
