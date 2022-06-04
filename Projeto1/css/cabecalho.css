@@ -1,4 +1,8 @@
 .cabecalho {
+    xposition: absolute;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box; /*inclui dimensões dos objetos internos no tamanho total*/
     text-align: center;
     /*centraliza os elementos*/
     font-size: 0.6em;
@@ -6,7 +10,6 @@
     text-transform: uppercase;
     letter-spacing: 0, 23em;
     color: white;
-    background-color: #2D5377;
 }
 
 .cabecalho_logo {

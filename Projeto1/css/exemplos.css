@@ -74,4 +74,9 @@ img {
     background-color: red;
     border: 2px solid;
 }
+
+.main div:hover {/*gera uma ação ao passar o mouse sobre*/
+    background-color: blue;
+    transition: .5s;/*tempo do efeito*/
+}
 .item0 {grid-column: 1 / span 2;}

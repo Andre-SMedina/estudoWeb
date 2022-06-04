@@ -1,0 +1,22 @@
+.-largura-maxima {
+    width: 100%;
+}
+.largura-grande {
+    width: 80%;
+}
+.botao {
+    font-size: 8rem;
+    font-weight: 500;
+    letter-spacing: 2.9px;
+    text-transform: uppercase;
+    padding: 1rem 40px;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    border-radius: 6px;
+    transition: .25s;
+}
+.botao:hover {/*gera uma ação ao passar o mouse sobre*/
+    transform: translate(10px, 20px);/*posiciona um objeto com base nas referências()passadas*/
+    transition: .25s;
+    color: red;
+}
