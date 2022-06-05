@@ -91,7 +91,6 @@ img {
     display: flex;/*tornna o item flex*/
     justify-content: center;/*centraliza na vertical*/
     align-items: center;/*centraliza na horizontal*/
-    /* flex-direction: column; */
     width: 600px;
     height: 400px;
     margin: 0 auto;

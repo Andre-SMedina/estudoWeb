@@ -30,3 +30,19 @@
     flex-direction: column;
     align-items: center;
 }
+.cursos_chamada {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.chamada_titulo {
+    color: #e93d50;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: .3rem;
+}
+.chamada_titulo-destaque {color: white;}
+.chamada_cursos_matricula {
+    color: white;
+    background-color: #e93d50;
+}
