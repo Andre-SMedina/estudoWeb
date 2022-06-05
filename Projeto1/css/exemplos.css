@@ -1,7 +1,13 @@
+#voltar {
+    position: fixed;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
 body {
-    background-color: rgb(155, 199, 219);
-    width: 940px;
-    margin: 0 auto;
+    /* background-color: rgb(155, 199, 219); */
+    /* width: 940px; */
+    /* margin: 0 auto; */
 }
 
 p#p1 {
@@ -80,3 +86,21 @@ img {
     transition: .5s;/*tempo do efeito*/
 }
 .item0 {grid-column: 1 / span 2;}
+.main2 {
+    text-align: center;
+    display: flex;/*tornna o item flex*/
+    justify-content: center;/*centraliza na vertical*/
+    align-items: center;/*centraliza na horizontal*/
+    /* flex-direction: column; */
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: red;
+}
+.outros {
+    margin: 2px;
+    border: 2px solid;
+    width: 200px;
+    height: 100px;
+    background-color: blue;
+}
