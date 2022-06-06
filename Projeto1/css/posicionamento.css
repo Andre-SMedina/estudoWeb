@@ -16,6 +16,11 @@
     background-color: red;
     margin: 10px;
 }
+#relativo {
+    position: relative;/*posição relativa a posição inicial do objeto*/
+    top: 10px;
+    left: 20px;
+}
 /* -----------------------------GRID-------------------------------- */
 .grid {
     display: grid;
@@ -36,10 +41,13 @@
 }
 /* ----------------------------imagens-------------------------------- */
 .figuras {
+    width: 50%;
     display: flex;
+    background-color: blue;
 }
 figure {
-    width: 40%;
+    padding: 5px;
+    background-color: rgb(218, 213, 213);
 }
 .figuras img {
     width: 100%;

@@ -1,8 +1,3 @@
-
-.links {
-    /* background-color: aqua; */
-    justify-content: space-between;/*preenche a linha com itens flex*/
-}
 p#p1 {
     color: blue;
     background-image: url("img.jpg");
