@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/containerExemplos.css">
+    <title>Formatação de textos</title>
+</head>
+
+<style>
+    #voltar {
+    position: fixed;/*objeto fica sempre visível ao rolar a página*/
+    right: 10%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+</style>
+
+<body>
+    <a href="../exemplos.html"><p id="voltar">Voltar</p></a>
+    <h1>Formatação de textos</h1>
+
+    <p><strong>Tag "Strong" negrito</strong></p>
+    <p><em>Tag "em" italico</em></p>
+    <p><mark>texto marcado</mark></p>
+    <p><small>Tag small</small></p>
+    <p><del>Texto excluído</del></p>
+    <p><ins>Texto inserido</ins></p>
+    <p>2<sup>o</sup></sup> andar</p>
+    <p>H<sub>2</sub>O</p>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript</p>
+    <pre> <!--mostra tudo que for escrito. Inclusive os espaços-->
+        <code>
+    num = int(input('Digitte um número: '))
+    if num % 2 == 0:
+        printf(f'Onúmero {num} é PAR)
+    else:
+        printf(f'O número {num} é ÍMPAR')
+    printf('Fim do programa')
+        </code>
+    </pre>
+    <q>Isso é uma citação</q>
+    <blockquote cite="URL da fonte vem aqui">
+        Isso é uma citação mais longa com a origem
+    </blockquote>
+    Abreviação de <abbr title="HyperText Markup Language">HTML</abbr>
+</body>
+</html>

@@ -1,0 +1,27 @@
+.listas_center {
+    margin: 0;
+    text-align: center;
+}
+.listas_format {
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration-line: underline;
+}
+.listas_center ul, ol, dl {
+    display: inline-block;
+    background-color: blue;
+    text-align: left;
+}
+#ol2 {
+    list-style: upper-latin;
+}
+#ol3 {
+    list-style: lower-roman;
+}
+li, dd {
+    background-color: green;
+}
+dt {
+    display: inline-block;
+    background-color: rgb(236, 101, 231);
+}

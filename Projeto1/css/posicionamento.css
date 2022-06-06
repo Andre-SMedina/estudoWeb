@@ -1,0 +1,46 @@
+/* -------------------------------DIVs--------------------------------- */
+.div_geral {
+    text-align: center;
+    background-color: green;
+    margin-top: 10px;
+}
+.div3 {
+    height: 100px;
+    display: flex;/*torna os objetos dentro da div em flex*/
+    justify-content: center;/*centraliza na vertical*/
+    align-items: center;/*centraliza na horizontal*/
+}
+.div3 div {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    margin: 10px;
+}
+/* -----------------------------GRID-------------------------------- */
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 500px;
+    margin-top: 10px;
+}
+.grid div{
+    margin: 0.5px;
+    text-align: center;
+    background-color: red;
+    border: 2px solid;
+}
+.item0 {grid-column: 1 / span 2;}
+.grid div:hover {/*gera uma ação ao passar o mouse sobre*/
+    background-color: blue;
+    transition: .5s;/*tempo do efeito*/
+}
+/* ----------------------------imagens-------------------------------- */
+.figuras {
+    display: flex;
+}
+figure {
+    width: 40%;
+}
+.figuras img {
+    width: 100%;
+}

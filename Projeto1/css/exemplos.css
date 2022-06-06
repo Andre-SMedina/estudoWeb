@@ -1,13 +1,6 @@
-#voltar {
-    position: fixed;
-    right: 10%;
-    background-color: black;
-    color: white;
-    padding: 10px;
-}
+
 .links {
-    width: 30%;
-    display: flex;
+    /* background-color: aqua; */
     justify-content: space-between;/*preenche a linha com itens flex*/
 }
 p#p1 {
@@ -35,78 +28,6 @@ p#p1 {
     /* border: 2px solid red; */
 
 }
-.listas_center {
-    margin: 0;
-    text-align: center;
-}
-.listas_format {
-    font-size: 18px;
-    font-weight: 600;
-    text-decoration-line: underline;
-}
-ul, ol, dl {
-    display: inline-block;
-    background-color: blue;
-    text-align: left;
-}
-
-li, dd {
-    background-color: green;
-}
-dt {
-    display: inline-block;
-    background-color: rgb(236, 101, 231);
-}
 h2 {
     font-family: "Helvetica", "Lucida Grande", sans-serif;
-}
-
-figure {
-    display: inline-block;
-    width: 40%;
-}
-
-img {
-    width: 100%;
-}
-/* .item0 {grid-area: a0;}
-.item1 {grid-area: a1;}
-.item2 {grid-area: a2;}
-.item3 {grid-area: a3;}
-.item4 {grid-area: a4;} */
-
-.main {
-    display: grid;
-    grid-template-columns: auto auto;
-    width: 500px;
-}
-
-.main div{
-    margin: 0.5px;
-    text-align: center;
-    background-color: red;
-    border: 2px solid;
-}
-
-.main div:hover {/*gera uma ação ao passar o mouse sobre*/
-    background-color: blue;
-    transition: .5s;/*tempo do efeito*/
-}
-.item0 {grid-column: 1 / span 2;}
-.main2 {
-    text-align: center;
-    display: flex;/*tornna o item flex*/
-    justify-content: center;/*centraliza na vertical*/
-    align-items: center;/*centraliza na horizontal*/
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-    background-color: red;
-}
-.outros {
-    margin: 2px;
-    border: 2px solid;
-    width: 100px;
-    height: 100px;
-    background-color: blue;
 }
