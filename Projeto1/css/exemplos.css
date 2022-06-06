@@ -7,21 +7,19 @@ p#p1 {
     text-align: center;
     font-size: 20px;
     width: 500px;
-    /* define a largura do elemento "li"*/
+    /* define a largura do elemento*/
     padding: 5px;
     /*define todos os espaços internos. Pode receber 4 valores*/
     margin: auto;
     /* define todos os espaços externos. Pode receber 4 valores*/
     line-height: 30px;
-    /* altera altura da linha */
+    /* altera a altura entre as linha */
     letter-spacing: 2px;
     /* altera espaço entre as letras */
     border-top: 4px solid blue;
     border-right: 4px solid rgb(25, 26, 24);
     border-bottom: 4px solid rgb(212, 0, 255);
     border-left: 4px solid rgb(21, 255, 0);
-    /* border: 2px solid red; */
-
 }
 h2 {
     font-family: "Helvetica", "Lucida Grande", sans-serif;

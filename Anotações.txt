@@ -1,6 +1,8 @@
 VScode
 
 word wrap = quebra automática de linha
+extensão "auto rename tag", "htmltagwrap"(seleção+Alt+w)
+
 Ctrl+K = Apagar linha
 Ctrl+\ = Abre outra janela ao lado
 Ctrl+; = Comentar linha (windows)
@@ -13,6 +15,7 @@ Alt+Shift+r = abrir local do arquivo
 Ctrl+l = seleciona uma linha
 Alt+Shift+f = identar tudo
 Ctrl+espaço = mostra os arquivos disponíveis
+Alt+z = quebra as linhas
 
 
 Sites
