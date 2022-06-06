@@ -1,7 +1,19 @@
 VScode
 
+word wrap = quebra automática de linha
 Ctrl+K = Apagar linha
 Ctrl+\ = Abre outra janela ao lado
+Ctrl+; = Comentar linha (windows)
+Ctrl+d = alterar várias linhas ao mesmo tempo onde tem a mesma palavra
+Ctrl+Alt+baixo = alterar várias linhas ao mesmo tempo
+Alt+baixo = manda a linha pra baixo
+Alt+Shift+baixo = copia a linha pra baixo
+Ctrl+p = últimos arquivos abertos
+Alt+Shift+r = abrir local do arquivo
+Ctrl+l = seleciona uma linha
+Alt+Shift+f = identar tudo
+Ctrl+espaço = mostra os arquivos disponíveis
+
 
 Sites
 

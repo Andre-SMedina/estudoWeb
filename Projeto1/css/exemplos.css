@@ -1,15 +1,15 @@
 #voltar {
     position: fixed;
+    right: 10%;
     background-color: black;
     color: white;
     padding: 10px;
 }
-body {
-    /* background-color: rgb(155, 199, 219); */
-    /* width: 940px; */
-    /* margin: 0 auto; */
+.links {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;/*preenche a linha com itens flex*/
 }
-
 p#p1 {
     color: blue;
     background-image: url("img.jpg");
@@ -35,21 +35,28 @@ p#p1 {
     /* border: 2px solid red; */
 
 }
-
-p.lista {
+.listas_center {
+    margin: 0;
     text-align: center;
 }
-
-li {
-    margin: 5px auto;
-    width: 500px;
+.listas_format {
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration-line: underline;
+}
+ul, ol, dl {
+    display: inline-block;
+    background-color: blue;
+    text-align: left;
 }
 
-dl {
-    width: 500px;
-    margin: auto;
+li, dd {
+    background-color: green;
 }
-
+dt {
+    display: inline-block;
+    background-color: rgb(236, 101, 231);
+}
 h2 {
     font-family: "Helvetica", "Lucida Grande", sans-serif;
 }
@@ -91,15 +98,15 @@ img {
     display: flex;/*tornna o item flex*/
     justify-content: center;/*centraliza na vertical*/
     align-items: center;/*centraliza na horizontal*/
-    width: 600px;
-    height: 400px;
+    width: 200px;
+    height: 200px;
     margin: 0 auto;
     background-color: red;
 }
 .outros {
     margin: 2px;
     border: 2px solid;
-    width: 200px;
+    width: 100px;
     height: 100px;
     background-color: blue;
 }
