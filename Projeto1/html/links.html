@@ -20,7 +20,7 @@
     <ul>
         <li><a href="../exemplos.html" target="_blank" rel="external">Exemplos em nova aba</a></li>
         <!-- "#fundo" é uma âncora que leva para algum do nosso site -->
-        <li><a href="#fundo">Ir para o fundo</a></li>
+        <li id="lifundo"><a href="#fundo">Ir para o fundo</a></li>
         <li><a href="../sobre.html#hist" target="_self" rel="next">Título em outra página</a></li>
         <!-- "type" serve apenas para informar ao navegador o tipo de mídia que será usado -->
         <li><a href="../img/familia-tupfeln.jpg" download="../img/familia-tupfeln.jpg" type="image/jpg">Download do arquivo</a></li>
@@ -43,6 +43,16 @@
         margin: 1000px auto 0;
         padding: 20px;
         background-color: green;
+    }
+    a {
+        text-decoration: none;
+        /* define o tempo do efeito ao passar o mouse em cima */
+        transition: color .5s;
+    }
+    /* muda a cor ao passar o mouse em cima */
+    a:hover {color: red;}
+    #lifundo {
+        list-style: circle;
     }
 </style>
 

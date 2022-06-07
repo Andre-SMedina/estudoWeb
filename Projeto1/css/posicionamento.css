@@ -4,17 +4,52 @@
     background-color: green;
     margin-top: 10px;
 }
+#div3_item1 {grid-area: titulo1;}
+#div3_item2 {grid-area: div1;}
+#div3_item3 {grid-area: titulo2;}
+#div3_item4 {grid-area: div2;}
+#div3_item5 {grid-area: titulo3;}
+#div3_item6 {grid-area: div3;}
 .div3 {
-    height: 100px;
-    display: flex;/*torna os objetos dentro da div em flex*/
-    justify-content: center;/*centraliza na vertical*/
-    align-items: center;/*centraliza na horizontal*/
+    margin: 10px auto 15px;/*1=topo/2=laterais/3=fundo*/
+    padding: 10px;
+    height: 170px;
+    display: grid;
+    grid-template-areas: 'titulo1 titulo2 titulo3' 'div1 div2 div3';
+    align-items: center;/*centraliza na horizontal e "flex-end" coloca pra baixo*/
+    justify-content: space-around;
 }
-.div3 div {
+.div3 span {
+    background-color: rgb(252, 252, 252);
+    margin: 10px;
+}
+.div3_1, .div3_2, .div3_3 {
+    border: 2px solid;
+    width: 17em;
+    height: 6em;
+    display: flex;/*torna os objetos dentro da div flex*/
+    align-items: center;
+}
+.div3_1 {
+    background-color: aquamarine;
+    justify-content: space-between;/*preenche a partir dos cantos*/
+}
+.div3_2 {
+    background-color: blueviolet;
+    justify-content: center;/*centraliza na vertical*/
+}
+.div3_3 {
+    background-color: rgb(94, 65, 239);
+    justify-content: space-evenly;/*preenche a partir do centro*/
+}
+.div3_1 div, .div3_2 div, .div3_3 div {
     width: 50px;
     height: 50px;
     background-color: red;
-    margin: 10px;
+}
+/*o "+" indica que só será aplicada a margem se houver outro elemento ao lado*/
+.div3_2 div+div {
+    margin-left: 10px;
 }
 #relativo {
     position: relative;/*posição relativa a posição inicial do objeto*/
