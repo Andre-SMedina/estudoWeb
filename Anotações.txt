@@ -1,7 +1,11 @@
 VScode
 
 word wrap = quebra automática de linha
-extensão "auto rename tag", "htmltagwrap"(seleção+Alt+w)
+auto-save
+extensão:
+"auto rename tag"(muda inicio e fim da tag)
+"htmltagwrap"(seleção+Alt+w)
+"live server"
 
 Ctrl+K = Apagar linha
 Ctrl+\ = Abre outra janela ao lado

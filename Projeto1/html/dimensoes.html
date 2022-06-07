@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/containerExemplos.css">
+    <a href="../exemplos.html"><p id="voltar">Voltar</p></a>
+    <title>Dimensões</title>
+</head>
+<body>
+    <p><strong>box-sizing: border-box;</strong> Faz com que o conteúdo do elemento não mude seu tamanho.</p>
+    <div id="box">
+        <div id="sem">
+            <p>Sem box-sizing: border-box;</p>
+        </div>
+        <div id="com">
+            <p>Com sizing-box: border-box;</p>
+        </div>
+    </div>
+
+    <style>
+        #sem {
+            background-color: green;
+            width: 200px;
+            height: 50px;
+            border: 4px solid;
+        }
+        #com {
+            margin-left: 10px;
+            background-color: green;
+            width: 200px;
+            height: 50px;
+            border: 4px solid;
+            box-sizing: border-box;
+        }
+        #box {
+            text-align: center;
+            display: flex;
+        }
+    </style>
+</body>
+</html>
