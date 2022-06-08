@@ -20,6 +20,7 @@ Ctrl+l = seleciona uma linha
 Alt+Shift+f = identar tudo
 Ctrl+espaço = mostra os arquivos disponíveis
 Alt+z = quebra as linhas
+Alt+] = dividir tela
 
 
 Sites

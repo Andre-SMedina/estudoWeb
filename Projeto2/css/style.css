@@ -1,14 +1,22 @@
 * {
+    line-height: 1.3;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
 header {
+    padding: 8px 24px;
     background-color: #111111;
+}
+header .container {
+    max-width: 1200px;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;/*quebra a linha pra baixo quando não há espaço entre os objetos flex*/
+    row-gap: 8px;
+    column-gap: 24px;
 }
 header img {
     width: 180px;
@@ -16,15 +24,13 @@ header img {
 header a {
     color: #ebebeb;
     text-decoration: none;
-    transition: color 2s;
+    transition: color .5s;
 }
 header ul {
     display: flex;
     list-style: none;
 }
-header ul li + li{
-    margin-left: 24px;
-}
+header ul li + li{margin-left: 24px;}
 header a:hover {
     color: #f13239;
 }
@@ -32,7 +38,7 @@ header a:hover {
 .hero {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-end;/*alinha os objetos flex no final*/
     align-items: center;
 
     height: 320px;
@@ -54,26 +60,82 @@ header a:hover {
 .dots span {
     /* display: block; */
     border-radius: 50%;
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     background-color: #ebebeb;
     cursor: pointer;
 }
 .dots span + span {margin-left: 10px;}
 #active {background-color: red;}
-
+/* -----------------------section1---------------------------- */
 .gallery {
+    font-weight: bold;
+    padding: 10px;
     max-width: 1200px;
     margin: 64px auto 0;
-    background-color: red;
 }
-.gallery h2 {
+.gallery h2, .history_col h2 {
+    padding-left: 5px;
+    border-left: 6px red solid;
     margin-bottom: 32px;
 }
 .gallery_row {
     display: flex;/*organiza todas a filhas uma do lado da outra sem quebrar a linha*/
     flex-wrap: wrap;/*faz com que quebre a linha quando não couber mais*/
-    justify-content: space-evenly;
+    gap: 24px;/*cria espaços entre os elementos*/
 }
-.gallery_row div {width: 350px;}
-.gallery_row img {width: 100%;}
+.gallery_row div {
+    /* width: 250px; */
+    flex: 1 1 250px;
+}
+.gallery_row img {
+    border: 2px solid;
+    border-radius: 10%;
+    width: 100%;
+}
+.gallery_row p {
+    padding: 20px;
+    text-align: center;
+}
+/*--------------------------section2----------------------*/
+.history {
+    background-color: #111111;
+    color: #ebebeb;
+    border-top: 3px solid red;
+    padding-bottom: 25px;
+}
+.history_texto {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.history a {
+    color: rgb(0, 55, 255);
+    transition: color .3s;
+}
+.history a:hover {color: #ee3838;}
+.history p + p {margin-top: 24px;}
+
+.history .container {
+    padding: 20px 20px 0;
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    border-bottom: 3px solid rgb(220, 78, 78);
+}
+.history_col {
+    flex: 1 1 250px;
+}
+.history_col img {
+    width: 100%;
+    display: block;
+}
+/* -----------------footer------------------ */
+footer {
+    text-align: center;
+    background-color: #111111;
+    color:#ebebeb ;
+    padding-bottom: 25px;
+}

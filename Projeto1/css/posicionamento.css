@@ -1,29 +1,22 @@
 /* -------------------------------DIVs--------------------------------- */
 .div_geral {
-    text-align: center;
+    text-align: center;/*centraliza todos os textos filhos*/
     background-color: green;
     margin-top: 10px;
 }
-#div3_item1 {grid-area: titulo1;}
-#div3_item2 {grid-area: div1;}
-#div3_item3 {grid-area: titulo2;}
-#div3_item4 {grid-area: div2;}
-#div3_item5 {grid-area: titulo3;}
-#div3_item6 {grid-area: div3;}
 .div3 {
-    margin: 10px auto 15px;/*1=topo/2=laterais/3=fundo*/
+    /*margin: 10px 0 15px;1=topo/2=laterais/3=fundo*/
     padding: 10px;
     height: 170px;
     display: grid;
-    grid-template-areas: 'titulo1 titulo2 titulo3' 'div1 div2 div3';
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;/*centraliza na horizontal e "flex-end" coloca pra baixo*/
-    justify-content: space-around;
 }
 .div3 span {
     background-color: rgb(252, 252, 252);
-    margin: 10px;
 }
 .div3_1, .div3_2, .div3_3 {
+    margin: 0 auto;
     border: 2px solid;
     width: 17em;
     height: 6em;
