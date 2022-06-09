@@ -11,6 +11,7 @@ Ctrl+K = Apagar linha
 Ctrl+\ = Abre outra janela ao lado
 Ctrl+; = Comentar linha (windows)
 Ctrl+d = alterar várias linhas ao mesmo tempo onde tem a mesma palavra
+Ctrl+Shift+l = seleciona tudo que for igual a seleção atual
 Ctrl+Alt+baixo = alterar várias linhas ao mesmo tempo
 Alt+baixo = manda a linha pra baixo
 Alt+Shift+baixo = copia a linha pra baixo

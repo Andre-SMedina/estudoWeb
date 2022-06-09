@@ -1,4 +1,7 @@
 /* -------------------------------DIVs--------------------------------- */
+* {
+    box-sizing: border-box;
+}
 .div_geral {
     text-align: center;/*centraliza todos os textos filhos*/
     background-color: green;
@@ -8,25 +11,31 @@
     /*margin: 10px 0 15px;1=topo/2=laterais/3=fundo*/
     padding: 10px;
     height: 170px;
+    gap: 10px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;/*centraliza na horizontal e "flex-end" coloca pra baixo*/
 }
+.div3_0 {
+    display: flex;/*torna os objetos dentro da div flex*/
+    flex-direction: column;
+    row-gap: 1px;
+}
 .div3 span {
+    border: 2px solid;
     background-color: rgb(252, 252, 252);
 }
 .div3_1, .div3_2, .div3_3 {
-    margin: 0 auto;
+    display: flex;
     border: 2px solid;
-    width: 17em;
     height: 6em;
-    display: flex;/*torna os objetos dentro da div flex*/
     align-items: center;
 }
 .div3_1 {
     background-color: aquamarine;
     justify-content: space-between;/*preenche a partir dos cantos*/
 }
+
 .div3_2 {
     background-color: blueviolet;
     justify-content: center;/*centraliza na vertical*/
@@ -36,7 +45,7 @@
     justify-content: space-evenly;/*preenche a partir do centro*/
 }
 .div3_1 div, .div3_2 div, .div3_3 div {
-    width: 50px;
+    width: 20%;
     height: 50px;
     background-color: red;
 }
@@ -53,12 +62,12 @@
 .grid {
     display: grid;
     grid-template-columns: auto auto;
+    gap: 1px;
     width: 500px;
     margin-top: 10px;
+    text-align: center;
 }
 .grid div{
-    margin: 0.5px;
-    text-align: center;
     background-color: red;
     border: 2px solid;
 }
