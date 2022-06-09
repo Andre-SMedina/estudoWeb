@@ -7,7 +7,7 @@
     text-decoration: none;
 }
 #projetos {
-    font-size: clamp(.7em, 1.5em, 2em);;
+        font-size: clamp(.7em, 1.5em, 2em);
     position: fixed;
     background-color: #ebebeb;
     color: #111111;

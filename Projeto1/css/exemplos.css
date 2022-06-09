@@ -1,3 +1,11 @@
+#projetos {
+    font-size: clamp(.7em, 1.5em, 2em);
+    position: fixed;
+    top: 0;
+    background-color: #ebebeb;
+    color: #111111;
+}
+header {margin-top: 50px;}
 p#p1 {
     color: blue;
     background-image: url("img.jpg");

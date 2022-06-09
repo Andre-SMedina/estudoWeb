@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header p {
+    position: fixed;
+    top: 0;/*distância do topo*/
+    background-color: black;
+    color: aliceblue;
+    padding: 7px;
+    font-size: 1.3em;
+}
+#stick {
+    background-color: blue;
+    display: flex;
+    align-items: flex-start;/*alinha objetos flex no topo*/
+    gap: 15px;/*cria espaços entre objetos flex*/
+    margin: 60px 10px 800px;
+    width: 40%;
+}
+#stick h2 {
+    position: sticky;/*gruda o elemento na tela até acabar o comprimento da box que ele está*/
+    margin: 10px;
+    background-color: aliceblue;
+    white-space: nowrap;/*não deixa quebrar a linha*/
+    top: 10px;
+}
