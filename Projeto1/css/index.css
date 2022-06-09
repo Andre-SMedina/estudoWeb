@@ -1,0 +1,6 @@
+#projetos {
+    margin-top: 30px;
+    font-size: clamp(.7em, 1.5em, 2em);
+    position: fixed;
+    background-color: #ebebeb;
+}

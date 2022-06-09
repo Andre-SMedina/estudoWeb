@@ -6,6 +6,12 @@
     font-family: sans-serif;
     text-decoration: none;
 }
+#projetos {
+    font-size: clamp(.7em, 1.5em, 2em);;
+    position: fixed;
+    background-color: #ebebeb;
+    color: #111111;
+}
 h1 {
     font-size: clamp(1.25em, 1em + 3vw, 2.5em);
     text-align: center;
