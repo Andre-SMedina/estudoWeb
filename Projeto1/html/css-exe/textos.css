@@ -1,0 +1,17 @@
+* {
+    line-height: 1.5;/*espaço entre as linhas*/
+    margin: 0;
+    padding: 0;
+}
+
+#titulos {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#result {
+    background-color: rgb(144, 144, 234);
+    border: solid;
+    display: inline-block;
+}

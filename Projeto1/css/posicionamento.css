@@ -47,6 +47,7 @@ ul a {color: aliceblue;}
 }
 
 .div3_2 {
+    flex-wrap: wrap;
     background-color: blueviolet;
     justify-content: center;/*centraliza na vertical*/
 }
@@ -56,17 +57,17 @@ ul a {color: aliceblue;}
 }
 .div3_1 div, .div3_2 div, .div3_3 div {
     width: 20%;
-    height: 50px;
+    height: 50%;
     background-color: red;
 }
 /*o "+" indica que só será aplicada a margem se houver outro elemento ao lado*/
 .div3_2 div+div {
-    margin-left: 10px;
+    margin-left: 4%;
 }
 #relativo {
     position: relative;/*posição relativa a posição inicial do objeto*/
-    top: 10px;
-    left: 20px;
+    top: 15%;
+    left: 10%;
 }
 /* -----------------------------GRID-------------------------------- */
 .grid {

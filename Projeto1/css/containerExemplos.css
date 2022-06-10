@@ -1,3 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {font-size: clamp(.7rem, 1vw + 0.1rem, 2rem);}
+
+h1 {font-size: clamp(1.4rem, 2vw + 0.2rem, 4rem);}
+
+h2 {font-size: clamp(1rem, 1.5vw + 0.15rem, 2rem);}
+
 #voltar {
     position: fixed;/*objeto fica sempre visível ao rolar a página*/
     right: 10%;
