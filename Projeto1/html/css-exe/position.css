@@ -3,39 +3,41 @@
     margin: 0;
     padding: 0;
 }
-body {padding: 20px;}
-header p {
+/* body {padding: 20px;} */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: fixed;
-    top: 0;/*distância do topo*/
+    width: 100%;
+    height: 50px;
+    top: 0;
     background-color: black;
     color: aliceblue;
     padding: 7px;
     font-size: 1.3em;
 }
-#stick {
+header a {
+    color: white;
+}
+#topo {
+    margin-right: 50%;
+}
+.sec {
     background-color: blue;
     display: flex;
     align-items: flex-start;/*alinha objetos flex no topo*/
     gap: 15px;/*cria espaços entre objetos flex*/
-    margin: 60px 10px 800px;
-    width: 40%;
+    margin: 100px 0 40px;
+    padding: 10px;
+    max-width: 800px;
 }
-#stick h2 {
-    position: sticky;/*gruda o elemento na tela até acabar o comprimento da box que ele está*/
-    margin: 10px;
+/* #sec1{display: none;} */
+.sec h2 {
     background-color: aliceblue;
     white-space: nowrap;/*não deixa quebrar a linha*/
-    top: 10px;
 }
-#other {
-    padding: 20px;
-    margin-top: 60px;
-    max-width: 800px;
-    min-height: 300px;
-    background-color: red;
-}
-#other div {
-    max-width: 300px;
-    min-height: 150px;
-    background-color: blue;
+#stick {
+    position: sticky;/*gruda o elemento na tela até acabar o comprimento da box que ele está*/
+    top: 60px;/*precisa colocar para funcionar o sticky*/
 }
