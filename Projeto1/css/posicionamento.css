@@ -2,6 +2,13 @@
 * {
     box-sizing: border-box;
 }
+body {
+    padding: 10px;
+}
+:root {
+    --bg-div1: green;
+    --bg-div2: red;
+}
 ul {
     padding: 10px;
     width: 20%;
@@ -14,7 +21,7 @@ ul {
 ul a {color: aliceblue;}
 .div_geral {
     text-align: center;/*centraliza todos os textos filhos*/
-    background-color: green;
+    background-color: var(--bg-div1);
     margin-top: 10px;
 }
 .div3 {
@@ -58,7 +65,7 @@ ul a {color: aliceblue;}
 .div3_1 div, .div3_2 div, .div3_3 div {
     width: 20%;
     height: 50%;
-    background-color: red;
+    background-color: var(--bg-div2);
 }
 /*o "+" indica que só será aplicada a margem se houver outro elemento ao lado*/
 .div3_2 div+div {
@@ -79,7 +86,7 @@ ul a {color: aliceblue;}
     text-align: center;
 }
 .grid div{
-    background-color: red;
+    background-color: var(--bg-div2);
     border: 2px solid;
 }
 .item0 {grid-column: 1 / span 2;}
@@ -89,9 +96,10 @@ ul a {color: aliceblue;}
 }
 /* ----------------------------imagens-------------------------------- */
 .figuras {
+    box-shadow: 0 0 25px rgba(179, 170, 7, 0.7);/*ultimo valor é a transparência*/
+    margin-top: 10px;
     width: 50%;
     display: flex;
-    background-color: blue;
 }
 figure {
     padding: 5px;

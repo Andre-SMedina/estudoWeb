@@ -3,8 +3,8 @@
     margin: 0;
     padding: 0;
 }
-/* body {padding: 20px;} */
 header {
+    z-index: 1;/*faz o stick passar por trás*/
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,6 +23,7 @@ header a {
 #topo {
     margin-right: 50%;
 }
+main{min-height: 2300px;}
 .sec {
     background-color: blue;
     display: flex;
