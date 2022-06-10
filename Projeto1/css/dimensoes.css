@@ -39,8 +39,8 @@ body {
     margin-top: 15px;
     cursor: pointer;
     width: 6%;
-    transition: .3s;
+    transition: transform .3s;
 }
 #icon:hover {
-    transform: scale(1.4);
+    transform: scale(1.4);/*faz o elemento aumentar 40% de tamanho*/
 }
