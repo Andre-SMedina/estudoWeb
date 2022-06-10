@@ -3,7 +3,9 @@
     margin: 0;
     padding: 0;
 }
-
+body {
+    padding: 10px;
+}
 #titulos {
     display: flex;
     align-items: center;
