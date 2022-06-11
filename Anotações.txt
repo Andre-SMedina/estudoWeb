@@ -2,15 +2,19 @@ VScode
 
 word wrap = quebra automática de linha
 auto-save
-extensão:
+extensão: (https://www.youtube.com/watch?v=cFfqrtP0Ta4) vídeo sobre extensões
 "auto rename tag"(muda inicio e fim da tag)
 "htmltagwrap"(seleção+Alt+w)
 "live server"
+"gitLens"
+"Settings Sync" - salva as configurações do VS.code no github
+"JavaScript (ES6) code snippets" - atalhos pa JS
+"ESlint" - padronizar escrita em JS
 
 Ctrl+K = Apagar linha
 Ctrl+\ = Abre outra janela ao lado
 Ctrl+; = Comentar linha (windows)
-Ctrl+d = alterar várias linhas ao mesmo tempo onde tem a mesma palavra
+Ctrl+d = alterar várias linhas ao mesmo tempo onde tem a mesma palavra(Ctrl+F2 pega todas)
 Ctrl+Shift+l = seleciona tudo que for igual a seleção atual
 Ctrl+Alt+baixo = alterar várias linhas ao mesmo tempo
 Alt+baixo = manda a linha pra baixo
