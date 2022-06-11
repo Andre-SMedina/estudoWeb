@@ -1,5 +1,6 @@
 VScode
 
+editor hover enabled = destiva sugestões da MDN
 word wrap = quebra automática de linha
 auto-save
 extensão: (https://www.youtube.com/watch?v=cFfqrtP0Ta4) vídeo sobre extensões

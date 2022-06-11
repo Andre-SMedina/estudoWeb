@@ -1,26 +1,130 @@
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --h1: clamp(1.4rem, 2vw + 0.4rem, 4rem);
+  --h2: clamp(1rem, 1.5vw + 0.15rem, 2rem);
+  --p: clamp(0.9rem, 1vw + 0.1rem, 2rem);
+}
+h1 {
+  font-size: var(--h1);
+}
+h2 {
+  font-size: var(--h2);
+}
+p {
+  font-size: var(--p);
+  text-indent: 4.5rem;
+}
+a {
+  font-size: var(--p);
+  color: black;
+  text-decoration: none;
+  transition: 0.3s;
+}
+h1,
+h2 {
+  margin-bottom: 15px;
+  text-indent: 4.5rem;
+}
+body {
+  font-size: clamp(0.7rem, 1vw + 0.1rem, 2rem);
+}
 header {
-    background-color: green;
+  position: sticky;
+  top: 0;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  text-align: center;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  width: 100%;
+  border-bottom: 2px solid;
+  background-color: rgb(211, 211, 211);
 }
-footer {
-    background-color: green;
+header img {
+  width: 80px;
+}
+header ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  font-weight: 600;
+  list-style: none;
+}
+header li {
+  position: relative;
+  top: 30px;
+  right: 50px;
+}
+header li a:hover {
+  color: red;
+  font-size: calc(var(--p) + 2px);
+}
 
+/* -----------------------MAIN-------------------- */
+
+main {
+  font-family: "Ubuntu", sans-serif;
+  padding: 10px;
+  width: 60%;
+  margin: 0 20%;
 }
-figure {
-    background-color: aqua;
+main img {
+  width: 100%;
 }
-#fig1 {
-    display: block;
-    margin-block-start: 10em;
-    margin-top: 1em;
-    margin-left: 1em;
+main figure {
+  width: 60%;
+  margin: 15px auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
-#fig2 {
-    display: block;
-    margin-block-start: 3em;
-    margin-bottom: 10em;
-    margin-block-end: 3em;
+.titulos {
+  margin-bottom: 25px;
 }
-#div {
-    background-color: aquamarine;
+.txtS {
+  display: block;
+  text-align: end;
+}
+.txtS a {
+    color: rgb(54, 54, 162);
+    text-decoration: underline;
+}
+hr {
+  margin-bottom: 3rem;
+}
+/* --------------------FOOTER-------------------- */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  background-color: black;
+  color: white;
+}
+
+/* --------------------MEDIA---------------------- */
+
+@media (max-width: 813px) {
+  header li {
+    top: 0px;
+    right: 0px;
+  }
+  h1,
+  h2,
+  p {
+    text-indent: 0;
+  }
+  footer {
+    height: 50px;
+  }
+}
+@media (max-width: 634px) {
+  header ul {
+    flex-direction: column;
+    gap: 3px;
+  }
 }
