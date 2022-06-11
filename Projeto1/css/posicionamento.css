@@ -96,7 +96,7 @@ ul a {color: aliceblue;}
 }
 /* ----------------------------imagens-------------------------------- */
 .figuras {
-    box-shadow: 0 0 25px rgba(179, 170, 7, 0.7);/*ultimo valor é a transparência*/
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);/*ultimo valor é a transparência*/
     margin-top: 10px;
     width: 50%;
     display: flex;
@@ -107,4 +107,18 @@ figure {
 }
 .figuras img {
     width: 100%;
+}
+#sec1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#overflow h2 {
+    text-align: center;
+}
+#p1 {
+    margin-top: 15px;
+    overflow: auto;/*cria barra de rolagem se o texto não couber*/
+    width: 200px;
+    height: 100px;
 }

@@ -6,7 +6,6 @@ extensão:
 "auto rename tag"(muda inicio e fim da tag)
 "htmltagwrap"(seleção+Alt+w)
 "live server"
-"Prettier" - formatar código
 
 Ctrl+K = Apagar linha
 Ctrl+\ = Abre outra janela ao lado
