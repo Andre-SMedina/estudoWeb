@@ -134,6 +134,9 @@ footer {
     gap: 3px;
   }
   main {
-    width: 80%;
+    width: 90%;
+  }
+  main figure {
+    width: 90%;
   }
 }
