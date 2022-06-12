@@ -32,6 +32,11 @@ h2 {
 body {
   font-size: clamp(0.7rem, 1vw + 0.1rem, 2rem);
 }
+#projetos {
+  text-indent: 13px;
+  top: 110px;
+  position: sticky;
+}
 header {
   position: sticky;
   top: 0;
@@ -90,8 +95,8 @@ main figure {
   text-align: end;
 }
 .txtS a {
-    color: rgb(54, 54, 162);
-    text-decoration: underline;
+  color: rgb(54, 54, 162);
+  text-decoration: underline;
 }
 hr {
   margin-bottom: 3rem;
