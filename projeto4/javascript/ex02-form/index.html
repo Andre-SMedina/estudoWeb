@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 02</title>
+</head>
+<body>
+    <form action="" name="FormConcatena" method="post">
+        Digite o nome............: <input type="text" name="f_nome" /><br>
+        Digite o sobrenome...: <input type="text" name="f_sobrenome"/><br>
+        <input type="button" name="btn_concatna" value="Concatenar" onclick="concatena()">
+        <input type="reset" name="btn_cancela" value="Cancelar">
+    </form>
+
+    <script language="JavaScript">
+        var js_nome;
+        var js_sobrenome;
+        var js_nomecompleto;
+
+        function concatena() {
+            js_nome = document.FormConcatena.f_nome.value;
+            js_sobrenome = document.FormConcatena.f_sobrenome.value;
+            js_nomecompleto = js_nome + ' ' + js_sobrenome;
+            window.alert('Olá ' + js_nomecompleto);
+        }
+    </script>
+</body>
+</html>

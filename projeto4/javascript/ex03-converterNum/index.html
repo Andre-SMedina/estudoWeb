@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversão de números</title>
+  </head>
+  <body>
+    <form action="" name="FormSoma" method="post">
+      Digite o primeiro número............:
+      <input type="text" name="num1" /><br />
+      Digite o segundo número............:
+      <input type="text" name="num2" /><br />
+      <input type="button" name="btn_soma" value="Soma" onclick="soma()" />
+      <input type="reset" name="btn_cancela" value="Cancelar" />
+      <label for="" id="resultado"></label>
+    </form>
+
+    <script>
+      var js_n1;
+      var js_n2;
+      var js_soma;
+      var result = document.getElementById("resultado");
+      var total = 0;
+
+      function soma() {
+        js_n1 = document.FormSoma.num1.value;
+        js_n2 = document.FormSoma.num2.value;
+        js_soma = parseInt(js_n1) + parseInt(js_n2);
+        total += js_soma;
+        result.innerHTML = "O resultado é: " + total;
+      }
+    </script>
+  </body>
+</html>

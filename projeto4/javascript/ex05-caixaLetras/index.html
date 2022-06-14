@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caixa das letras</title>
+  </head>
+  <body>
+    <h1>Formulário de consulta de curso</h1>
+    <br />
+    <form action="" name="formcurso" method="post">
+      Digite seu curso:
+      <input type="text" id="f_cursodig" size="8" maxlength="4" />
+      (SIST) <br /><br />
+      <input type="button" name="btn_validar" onclick="cadcurso()" value="Validar">
+      <button type="reset" name="btn_cancelar">Resetar</button>
+      <br /><br />
+      Código do curso: <label id="f_codcurso"></label>
+    </form>
+
+    <script language="JavaScript">
+        const js_cursodig = document.querySelector("#f_cursodig");
+        const js_codcurso = document.querySelector("#f_codcurso");
+
+        function cadcurso() {
+            // toLowerCase
+      if (js_cursodig.value.toUpperCase() == "SIST") {
+        js_codcurso.innerText = "SIST001/FB";
+      } else {
+        window.alert("Curso Inválido!");
+      }
+        }
+    </script>
+  </body>
+</html>
