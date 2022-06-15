@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css" />
     <title>Exercício 02</title>
   </head>
   <body>
-    <form action="" name="FormConcatena" method="post">
-      Digite o nome............: <input type="text" name="f_nome" /><br />
+    <form name="FormConcatena" method="post">
+      Digite o nome............: <input type="text" name="f_nome"/><br />
       Digite o sobrenome...: <input type="text" name="f_sobrenome" /><br />
       <hr />
       <input type="checkbox" name="curso" value="cursoA" checked />Curso A<br />
@@ -23,13 +23,14 @@
       <label>Campo invisível</label>
       <input type="hidden" /><br />
       <hr />
-      <input
-        type="button"
-        name="btn_concatna"
-        value="Concatenar"
-        onclick="concatena()"
-      />
+      <label for="email">Email</label>
+      <input type="email" name="email" required="required"><br>
+      <label for="fone">Telefone</label>
+      <input type="phone" name="fone" placeholder="(xx) x xxxx-xxxx" required="required"><br>
+      <!--O botão precisa ter o form com o nome do formulário-->
+      <button form="FormConcatena" onclick="concatena()">Concatenar</button>
       <input type="reset" name="btn_cancela" value="Cancelar" />
+      <textarea name="kkk" id="kk" cols="30" rows="10" required="required"></textarea>
     </form>
     <hr />
     <select>
@@ -73,20 +74,32 @@
       </div>
     </div>
     <footer>
-        <div>
-            <h3>Tudo sobre HTML</h3>
-            <p><a href="#openmodal">Clique aqui</a>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic non sunt aliquam veritatis minus iure doloribus aliquid ab quia exercitationem?</p>
-        </div>
-        <div>
-            <h3>Tecnologia</h3>
-            <p><a href="#openmodal1">Clique aqui</a>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic non sunt aliquam veritatis minus iure doloribus aliquid ab quia exercitationem?</p>
-        </div>
-        <div>
-            <h3>Acessibilidade</h3>
-            <p><a href="#openmodal2">Cique aqui</a>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic non sunt aliquam veritatis minus iure doloribus aliquid ab quia exercitationem?</p>
-        </div>
+      <div>
+        <h3>Tudo sobre HTML</h3>
+        <p>
+          <a href="#openmodal">Clique aqui</a>Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Hic non sunt aliquam veritatis minus
+          iure doloribus aliquid ab quia exercitationem?
+        </p>
+      </div>
+      <div>
+        <h3>Tecnologia</h3>
+        <p>
+          <a href="#openmodal1">Clique aqui</a>Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Hic non sunt aliquam veritatis minus
+          iure doloribus aliquid ab quia exercitationem?
+        </p>
+      </div>
+      <div>
+        <h3>Acessibilidade</h3>
+        <p>
+          <a href="#openmodal2">Cique aqui</a>Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Hic non sunt aliquam veritatis minus
+          iure doloribus aliquid ab quia exercitationem?
+        </p>
+      </div>
     </footer>
-    <a href="#" id="tudo">aaa</a>
+    <a href="#" id="tudo">Fechar</a>
 
     <script language="JavaScript">
       var js_nome;

@@ -69,3 +69,14 @@ form {
 .close:hover {
   background-color: #b50909;
 }
+#tudo {
+  position: absolute;
+  margin-left: -110px;
+  margin-top: -40px;
+  left: 50%;
+  /* right: 50%; */
+  display: block;
+  width: 200px;
+  height: 80px;
+  background-color: green;
+}
