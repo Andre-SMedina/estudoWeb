@@ -21,12 +21,12 @@
   <body>
     <header>
       <a href="index.html"><img src="img/logo1.png" alt="logo" /></a>
-      <h1>O mundo da Tecnologia</h1>
+      <a href="#"><h1>O mundo da Tecnologia</h1></a>
       <nav>
         <ul>
           <li><a href="#">Sobre</a></li>
           <li><a href="#">Novidades</a></li>
-          <li><a href="#">Contato</a></li>
+          <li><a href="#mail">Contato</a></li>
         </ul>
       </nav>
     </header>
@@ -85,11 +85,12 @@
           <p>
             Em linhas gerais, o consórcio JEDEC, responsável por criar e
             implementar padrões técnicos para esse tipo de componente, define a
-            memória DDR5 a partir da promessa do dobro de largura de banda em
-            relação ao que é possível no DDR4 – isso ainda com redução no
-            consumo de energia. A adoção da tecnologia deve começar nos próximos
-            meses por conta das especificações técnicas gerais que fabricantes
-            devem obedecer ao produzir seus chips e módulos de memória DDR5.
+            memória DDR5 a partir da promessa do dobro de largura de banda
+            emrelação ao que é possível no DDR4 – isso ainda com redução
+            noconsumo de energia. A adoção da tecnologia deve começar nos
+            próximosmeses por conta das especificações técnicas gerais que
+            fabricantesdevem obedecer ao produzir seus chips e módulos de
+            memória DDR5.
           </p>
           <p>
             No último dia 14 de julho, a JEDEC fixou os parâmetros para os
@@ -105,7 +106,25 @@
     </main>
 
     <footer>
-      <span>Desenvolvido por: André Luís Silva Medina</span>
+      <address>
+        <p>Desenvolvido por: André Luís Silva Medina</p>
+        <a
+          href="https://www.linkedin.com/in/andr%C3%A9-lu%C3%ADs-silva-medina-44676817a/"
+          target="_blank"
+          ><img src="https://img.icons8.com/color/48/undefined/linkedin.png"
+        /></a>
+        <div id="mail">
+          <a id="addr" href="mailto:medinadev01@gmail.com">medinadev01@gmail.com</a>
+          <button onclick="copmail()">Copiar</button>
+          <a href="#" id="close">X</a>
+        </div>
+      </address>
     </footer>
+
+    <script>
+      function copmail() {
+        navigator.clipboard.writeText("medinadev01@gmail.com");
+      }
+    </script>
   </body>
 </html>

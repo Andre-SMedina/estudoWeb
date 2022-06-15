@@ -7,6 +7,7 @@
   --h1: clamp(1.4rem, 2vw + 0.4rem, 4rem);
   --h2: clamp(1rem, 1.5vw + 0.15rem, 2rem);
   --p: clamp(0.9rem, 1vw + 0.1rem, 2rem);
+  --bg: linear-gradient(90deg, #00dbde 0%, #9900ff 100%);
 }
 h1 {
   font-size: var(--h1);
@@ -16,6 +17,8 @@ h2 {
 }
 p {
   font-size: var(--p);
+}
+main p {
   text-indent: 4.5rem;
 }
 a {
@@ -24,8 +27,8 @@ a {
   text-decoration: none;
   transition: 0.3s;
 }
-h1,
-h2 {
+main h1,
+main h2 {
   margin-bottom: 15px;
   text-indent: 4.5rem;
 }
@@ -36,24 +39,28 @@ body {
   text-indent: 0;
   top: 110px;
   position: sticky;
+  display: inline-block;
   margin: 0;
 }
 header {
   position: sticky;
   top: 0;
   font-family: "Kdam Thmor Pro", sans-serif;
-  text-align: center;
   display: flex;
-  gap: 15px;
   align-items: center;
   justify-content: space-between;
   padding: 15px;
   width: 100%;
   border-bottom: 2px solid;
-  background: linear-gradient(90deg, #00dbde 0%, #9900ff 100%);
+  background: var(--bg);
 }
 header img {
   width: 80px;
+}
+header nav {
+  position: relative;
+  top: 30px;
+  right: 50px;
 }
 header ul {
   display: flex;
@@ -61,11 +68,6 @@ header ul {
   gap: 15px;
   font-weight: 600;
   list-style: none;
-}
-header li {
-  position: relative;
-  top: 30px;
-  right: 50px;
 }
 header li a:hover {
   color: red;
@@ -103,13 +105,72 @@ hr {
   margin-bottom: 3rem;
 }
 /* --------------------FOOTER-------------------- */
-footer {
+footer address {
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80px;
+  height: 60px;
   background-color: black;
   color: white;
+}
+#mail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  width: 300px;
+  height: 150px;
+  background-color: antiquewhite;
+  color: #181818;
+  position: absolute;
+  top: 10px;
+  left: 60%;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .6s;
+  border-radius: 12px;
+  box-shadow: 0 5px 5px 0px #181818;
+}
+#mail button {
+  background-color: #d2d2d2;
+  height: 30px;
+  width: 60px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color .5s ease-in-out;
+  box-shadow: 0 1px 2px 0px;
+}
+#mail button:hover {
+  background-color: rgb(237, 236, 236);
+}
+#mail button:active {
+  width: 57px;
+  height: 27px;
+}
+#addr {
+  font-size: 23px;
+  font-weight: bold;
+  border-bottom: 2px solid;
+}
+#close {
+  width: 24px;
+  position: absolute;
+  top: 0px;
+  right: -12px;
+  padding: 5px;
+  background-color: #606061;
+  color: #fff;
+  border-radius: 12px;
+}
+#close:hover {
+  background-color: red;
+}
+#mail:target {
+  visibility: visible;
+  opacity: 1;
 }
 
 /* --------------------MEDIA---------------------- */
