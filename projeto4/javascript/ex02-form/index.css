@@ -1,59 +1,71 @@
 body {
-    background-image: url("../../../Projeto2/images/avengers-04.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .modalDialog {
-    position: fixed;
-    font-family: Verdana;
-    /* top: 0; */
-    right: 0;
-    /* bottom: 0; */
-    /* left: 0; */
-    background: rgb(225, 187, 187);
-    z-index: 9999;
-    opacity: 0%;
-    -webkit-transition: opacity 400ms ease-in;
-    -moz-transition: opacity 400ms ease-in;
-    transition: opacity 400ms ease-in;
-    pointer-events: none;
-  }
-  .modalDialog:target {
-    display: block;
-    opacity: 100%;
-    pointer-events: auto;
-  }
-  .modalDialog div {
-    width: 500px;
-    position: relative;
-    margin: 10% auto;
-    padding: 5px 20px 13px 20px;
-    border-radius: 10px;
-    background-color: #fff;
-  }
-  .modalDialog p {
-    margin-top: 5%;
-    margin-bottom: 5%;
-  }
-  .modalDialog img {
-    width: 50%;
-    position: relative;
-    margin-left: 25%;
-  }
-  .close {
-    background-color: #606061;
-    color: #ffffff;
-    line-height: 25px;
-    position: absolute;
-    right: -12px;
-    text-align: center;
-    top: -10px;
-    width: 24px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 12px;
-  }
-  .close:hover {
-    background-color: #b50909;
-  }
+  background-image: url("lago.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+p, h3 {
+  display: inline;
+  background-color: #fff;
+}
+a {
+  color: #fff;
+  background-color: #000;
+}
+form {
+  background-color: antiquewhite;
+  display: inline-block;
+}
+.modalDialog {
+  position: fixed;
+  font-family: Verdana;
+  /* top: 0; */
+  right: 0;
+  /* bottom: 0; */
+  /* left: 0; */
+  background: rgb(225, 187, 187);
+  z-index: 9999;
+  opacity: 0%;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+.modalDialog:target {
+  display: block;
+  opacity: 100%;
+  pointer-events: auto;
+}
+.modalDialog div {
+  width: 500px;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.modalDialog p {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.modalDialog img {
+  width: 50%;
+  position: relative;
+  margin-left: 25%;
+}
+.close {
+  background-color: #606061;
+  color: #ffffff;
+  line-height: 25px;
+  position: absolute;
+  right: -12px;
+  text-align: center;
+  top: -10px;
+  width: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 12px;
+}
+.close:hover {
+  background-color: #b50909;
+}
