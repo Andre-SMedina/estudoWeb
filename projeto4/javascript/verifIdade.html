@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verificador de idade</title>
+  </head>
+  <body>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: rgb(86, 129, 231);
+        font-family: sans-serif;
+      }
+      h1 {
+        color: white;
+        text-align: center;
+      }
+      main {
+        width: 90%;
+        margin: 20px auto;
+        background-color: white;
+        border-radius: 12px;
+        padding: 20px;
+      }
+      #f_msg {
+        text-align: center;
+        display: block;
+      }
+      main img {
+        display: block;
+        margin: 10px auto 0;
+        width: 30%;
+        border-radius: 50%;
+      }
+      footer {
+        text-align: center;
+        color: white;
+      }
+    </style>
+
+    <header>
+      <h1>Verificador de idade</h1>
+    </header>
+    <main>
+      <form name="f_main" method="post">
+        <label>Ano de Nascimento</label>
+        <input type="number" name="f_anoN" id="f_anoID" /><br /><br />
+        <label>Sexo: </label>
+        <input type="radio" id="f_checkM" name="sexo" value="Homem" checked />
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="f_checkF" name="sexo" value="Mulher" />
+        <label for="feminino">Feminino</label>
+        <br /><br />
+        <button form="f_main" onclick="verificar()">Verificar</button
+        ><br /><br />
+        <label id="f_msg">Detectamos Homem com 9 anos</label>
+        <img id="imagem" src="" alt="" />
+      </form>
+    </main>
+    <footer>
+      <p>Desenvolvido por André Luís</p>
+    </footer>
+
+    <script src="verifIdade.js"></script>
+  </body>
+</html>
