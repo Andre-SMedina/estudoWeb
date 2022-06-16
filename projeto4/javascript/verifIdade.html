@@ -33,7 +33,7 @@
       main img {
         display: block;
         margin: 10px auto 0;
-        width: 30%;
+        width: 200px;
         border-radius: 50%;
       }
       footer {
@@ -43,12 +43,13 @@
     </style>
 
     <header>
+        <h3><a href="../../index.html">Voltar</a></h3>
       <h1>Verificador de idade</h1>
     </header>
     <main>
       <form name="f_main" method="post">
         <label>Ano de Nascimento</label>
-        <input type="number" name="f_anoN" id="f_anoID" /><br /><br />
+        <input form="f_main" type="number" name="f_anoN" id="f_anoID" /><br /><br />
         <label>Sexo: </label>
         <input type="radio" id="f_checkM" name="sexo" value="Homem" checked />
         <label for="masculino">Masculino</label>
@@ -57,7 +58,7 @@
         <br /><br />
         <button form="f_main" onclick="verificar()">Verificar</button
         ><br /><br />
-        <label id="f_msg">Detectamos Homem com 9 anos</label>
+        <label id="f_msg"></label>
         <img id="imagem" src="" alt="" />
       </form>
     </main>

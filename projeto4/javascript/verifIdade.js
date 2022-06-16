@@ -1,7 +1,16 @@
+var anoForm = document.querySelector("#f_anoID");
+
+anoForm.addEventListener("keyup", function (e) {
+  var key = e.which || e.keyCode;
+  if (key == 13) {
+    // codigo da tecla enter
+    verificar();
+  }
+});
+
 function verificar() {
   var today = new Date();
   var anoNow = today.getFullYear();
-  var anoForm = document.querySelector("#f_anoID");
   var sexo = document.querySelector("input[name='sexo']:checked").value;
   var msg = document.querySelector("#f_msg");
   var idade = anoNow - parseInt(anoForm.value);
@@ -39,9 +48,3 @@ function verificar() {
     }
   }
 }
-
-document.addEventListener('keypress', function(e){
-    if(e.which == 13){
-       console.log('a tecla enter foi pressionada');
-    }
- }, false);

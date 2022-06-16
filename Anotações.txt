@@ -1,8 +1,9 @@
 VScode
 
-editor hover enabled = destiva sugestões da MDN
+hoverEnable = destiva sugestões da MDN
 word wrap = quebra automática de linha
 auto-save
+
 extensão: (https://www.youtube.com/watch?v=cFfqrtP0Ta4) vídeo sobre extensões
 "auto rename tag"(muda inicio e fim da tag)
 "htmltagwrap"(seleção+Alt+w)
