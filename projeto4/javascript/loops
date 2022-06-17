@@ -1,0 +1,29 @@
+var control = 0;
+
+//   do {
+//     console.log(`do while: ${control}`)
+//     control++;
+//   } while (control < 5);
+
+//   while (control < 5) {
+//     console.log(`while: ${control}`)
+//     control++;
+//   }
+//---------------------------------------------------------
+//   for(i = 0; i < 5; i++) {
+//     console.log(`for : ${i}`)
+//   }
+
+const lista = [0, 1, 2, 3, 4];
+lista.foo = "hello";
+
+//for of lê apenas listas simples
+// for (i of lista) {
+//   console.log(`for of: ${i}`);
+// }
+
+// for in lê listas mais comlexas
+for (const i in lista) {
+  console.log(`for in: ${i}`);
+}
+console.log(lista)
