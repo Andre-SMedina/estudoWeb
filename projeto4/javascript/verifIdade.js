@@ -1,5 +1,7 @@
 var anoForm = document.querySelector("#f_anoID");
+var img = document.querySelector("#imagem");
 
+//executar função quando apertar enter
 anoForm.addEventListener("keyup", function (e) {
   var key = e.which || e.keyCode;
   if (key == 13) {
@@ -14,7 +16,6 @@ function verificar() {
   var sexo = document.querySelector("input[name='sexo']:checked").value;
   var msg = document.querySelector("#f_msg");
   var idade = anoNow - parseInt(anoForm.value);
-  var img = document.querySelector("#imagem");
 
   if (anoForm.value.length == 0 || anoForm.value >= anoNow) {
     alert("Ano vazio ou menor que o atual");
@@ -47,4 +48,11 @@ function verificar() {
       }
     }
   }
+}
+
+function apagar() {
+  img.style.opacity = 0;
+}
+function mostrar() {
+  img.style.opacity = 1;
 }

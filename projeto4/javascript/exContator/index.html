@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contador</title>
+  </head>
+  <body>
+    <style>
+      select {
+        width: 150px;
+      }
+    </style>
+<!-- ---------------------------------BODY------------------------------ -->
+    <button id="btn" onclick="contar()">Começar</button>
+    <label id="contador">...</label><br /><br />
+
+    Número (entre 1 e 100): <input type="number" id="num" />
+    <button onclick="add()">Adcionar</button><br /><br />
+    <select id="lista" size="6"></select
+    ><br />
+    <button id="btnFin">Finalizar</button>
+    <div id="res"></div>
+<!-- ---------------------------SCRIPT------------------------------------ -->
+    <script>
+      var cont = document.querySelector("#contador");
+
+      function contar() {
+        for (i = 0; i < 101; i++) {
+          cont.innerHTML += ` ${i}`;
+        }
+      }
+
+      //   -------------------------------------------------------
+
+      var num = document.querySelector("#num");
+      var lista = document.querySelector("#lista");
+      var res = document.querySelector("#res");
+      var valores = [];
+
+      function isNumero(n) {
+        //Number converte string para número
+        if (Number(n) >= 1 && Number(n) <= 100) {
+          return true;
+        } else {
+          console.log(n.value);
+          return false;
+        }
+      }
+
+      function inLista(n, l) {
+        //-1 indica que o elemento não foi encontrado na lista
+        if (l.indexOf(Number(n)) != -1) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+
+      function add() {
+        if (isNumero(num.value) && !inLista(num.value, valores)) {
+          valores.push(Number(num.value));
+          //cria um elemento option para incluir no elemento select
+          let item = document.createElement("option");
+          //add o texto no option
+          item.text = `Valor ${num.value} adicionado`;
+          //add o item option na select
+          lista.appendChild(item);
+          res.innerHTML = "";
+        } else {
+          alert("Valor inválido ou já encontrado na lista");
+        }
+        num.value = "";
+        num.focus();
+      }
+
+      //executar função quando apertar enter
+      num.addEventListener("keyup", function (e) {
+        var key = e.which || e.KeyCode;
+        if (key == 13) {
+          add();
+        }
+      });
+
+      var btnFin = document.querySelector("#btnFin");
+      var box = document.querySelector("#res");
+
+      btnFin.addEventListener("click", function () {
+        var soma = () => {
+          var total = 0;
+          for (const i in valores) {
+            total += Number(valores[i]);
+          }
+          return total;
+        };
+
+        res.innerHTML = `
+        Ao todo, temos ${valores.length} números cadastrados.<br>
+        Somando todos os valores, temos ${soma()}.<br>
+        A média dos valores é ${(soma() / valores.length).toFixed(2)}<br>
+        O menor valor informado foi ${Math.min.apply(null, valores)}.<br>
+        O maior valor informado foi ${Math.max.apply(null, valores)}.<br>
+        `;
+      });
+    </script>
+  </body>
+</html>
