@@ -16,7 +16,8 @@ const person = new Person("André", "Luís", 39);
 
 // console.log(person.firstName);
 // person.getFullName();
-Person.speak()
+// chama função da classe sem instanciar antes, pois é static
+// Person.speak();
 
 class Animal {
   constructor(name) {
@@ -24,6 +25,22 @@ class Animal {
   }
 
   speak() {
-    console.log();
+    console.log(`${this.name} made some noise!`);
   }
 }
+
+class Dog extends Animal {
+  constructor(name) {
+    super(name);
+  }
+
+  speak() {
+    console.log(`${this.name} barked!(latiu)`);
+  }
+}
+
+const animal = new Animal("Simba");
+const dog = new Dog('Bob')
+
+animal.speak();
+dog.speak()

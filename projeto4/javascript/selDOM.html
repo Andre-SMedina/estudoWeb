@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selecionando elementos do DOM</title>
+  </head>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    section {
+      padding: 5px 20px;
+      width: 400px;
+      margin: 0 auto;
+    }
+    form {
+      border-radius: 12px;
+      margin-top: 20px;
+      padding: 15px;
+      width: 100%;
+      background-color: rgb(226, 225, 224);
+    }
+    button {
+      height: 25px;
+      background-color: black;
+      color: white;
+      border-radius: 5px;
+      margin-top: 10px;
+      width: 100%;
+    }
+    input {
+      height: 25px;
+      width: 100%;
+      border-radius: 5px;
+    }
+    ul {
+      margin-top: 5px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      list-style: none;
+    }
+    li {
+      text-align: center;
+      padding: 4px;
+      background-color: rgb(226, 225, 224);
+    }
+    body {
+      background-color: rgb(36, 35, 35);
+    }
+    button:hover {
+      background-color: rgb(208, 116, 76);
+      cursor: pointer;
+    }
+    button:active {
+      height: 22px;
+      width: 98%;
+    }
+  </style>
+
+  <body id="body">
+    <section class="container">
+      <div class="msg"></div>
+      <form id="my-form" method="get">
+        <h1 id="add-user">Add User</h1>
+        <label for="name">Name:</label><br />
+        <input id="name" type="text" /><br />
+        <label for="email">Email:</label><br />
+        <input id="email" type="text" /><br />
+        <button id="submit-button" class="btn">Submit</button>
+      </form>
+      <ul id="users"></ul>
+      <ul class="items">
+        <li class="item">Item 1</li>
+        <li class="item">Item 2</li>
+        <li class="item">Item 3</li>
+      </ul>
+    </section>
+
+    <script>
+      window.onload = function () {
+        console.log("Seja bem vindo!!!");
+      };
+      //para pegar o elemento pelo ID
+      const addUserText = document.querySelector("#add-user");
+      addUserText.textContent = "Adcionar Usuário";
+
+      //para pegar todos os itens de uma classe
+      const allItems = document.querySelectorAll(".item");
+      //altera apenas um item da classe
+      allItems[0].textContent = "Alternado item 0 pela li";
+      //remove um item selecionado
+      allItems[1].remove();
+
+      const items = document.querySelector(".items");
+      //   items.firstElementChild.remove()
+      //   items.lastElementChild.remove();
+      items.children[1].textContent = "Alterando item 1 pela UL";
+      items.innerHTML += "<li><h2>Add uma li via js</h2></li>";
+
+      const button = document.querySelector(".btn");
+      const nameInput = document.querySelector("#name");
+      const emailInput = document.querySelector("#email");
+
+      //   button.style.background = "red";
+      button.addEventListener("click", (bt) => {
+        //impede que a págiina recarregue ao clicar no botão
+        bt.preventDefault();
+        if (nameInput.value === '' || emailInput.value === '') {
+          alert('Preenchar todos os campos!')
+        } else {
+          items.children[0].textContent = `Usuário ${nameInput.value}`
+          items.children[1].textContent = `email ${emailInput.value}`
+          items.children[2].textContent = `Ambos cadastrados`
+        }
+
+      });
+      // executa algo depois que entra e sai do input
+        nameInput.addEventListener("change", function (inpt) {
+          console.log(inpt.target.value);
+        });
+      nameInput.addEventListener("keyup", (enter) => {
+        if (enter.key == "Enter") {
+          enter.target.value = "apaguei";
+        }
+      });
+    </script>
+  </body>
+</html>
