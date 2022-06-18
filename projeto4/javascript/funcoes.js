@@ -37,7 +37,6 @@ let amigo = {
 amigo.engordar(-5);
 
 // Arrow functions---------------------------------
-
 let hello = () => "Hello World";
 let hello2 = (name, lastName) => `Hello ${name} ${lastName}`;
 let hello3 = (fullName) => `Hello ${fullName}`;

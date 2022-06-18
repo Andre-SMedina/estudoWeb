@@ -25,6 +25,9 @@
       width: 100%;
       background-color: rgb(226, 225, 224);
     }
+    form h1 {
+      text-align: center;
+    }
     button {
       height: 25px;
       background-color: black;
@@ -62,13 +65,22 @@
       height: 22px;
       width: 98%;
     }
+    #msg {
+      border-radius: 5px;
+      background-color: red;
+      text-align: center;
+      height: 20px;
+      color: white;
+      font-weight: bold;
+      visibility: hidden;
+    }
   </style>
 
   <body id="body">
     <section class="container">
-      <div class="msg"></div>
       <form id="my-form" method="get">
         <h1 id="add-user">Add User</h1>
+        <div id="msg">Preencha todos os campos!</div>
         <label for="name">Name:</label><br />
         <input id="name" type="text" /><br />
         <label for="email">Email:</label><br />
@@ -94,7 +106,7 @@
       //para pegar todos os itens de uma classe
       const allItems = document.querySelectorAll(".item");
       //altera apenas um item da classe
-      allItems[0].textContent = "Alternado item 0 pela li";
+      allItems[0].textContent = "Alterando item 0 pela li";
       //remove um item selecionado
       allItems[1].remove();
 
@@ -107,29 +119,40 @@
       const button = document.querySelector(".btn");
       const nameInput = document.querySelector("#name");
       const emailInput = document.querySelector("#email");
+      const msg = document.querySelector("#msg");
+      const li = document.createElement("li");
 
       //   button.style.background = "red";
       button.addEventListener("click", (bt) => {
         //impede que a págiina recarregue ao clicar no botão
         bt.preventDefault();
-        if (nameInput.value === '' || emailInput.value === '') {
-          alert('Preenchar todos os campos!')
+        if (nameInput.value === "" || emailInput.value === "") {
+          msg.style.visibility = "visible";
+          //após 3 segundos execulta essa função
+          setTimeout(() => {
+            msg.style.visibility = "hidden";
+          }, 3000);
         } else {
-          items.children[0].textContent = `Usuário ${nameInput.value}`
-          items.children[1].textContent = `email ${emailInput.value}`
-          items.children[2].textContent = `Ambos cadastrados`
-        }
+          nameInput.value = "";
+          emailInput.value = "";
+          items.children[0].textContent = `Usuário ${nameInput.value}`;
+          items.children[1].textContent = `email ${emailInput.value}`;
+          items.children[2].textContent = `Ambos cadastrados`;
 
+          li.textContent = "Criei outra li";
+          items.appendChild(li);
+        }
       });
       // executa algo depois que entra e sai do input
-        nameInput.addEventListener("change", function (inpt) {
-          console.log(inpt.target.value);
-        });
+      nameInput.addEventListener("change", function (inpt) {
+        console.log(inpt.target.value);
+      });
       nameInput.addEventListener("keyup", (enter) => {
         if (enter.key == "Enter") {
           enter.target.value = "apaguei";
         }
       });
+
     </script>
   </body>
 </html>

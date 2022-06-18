@@ -2,3 +2,5 @@ Expressões regulares
 Json
 Ajax
 Nodejs
+promises
+Async/Await
