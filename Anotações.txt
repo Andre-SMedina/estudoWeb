@@ -16,8 +16,8 @@ extensão: (https://www.youtube.com/watch?v=cFfqrtP0Ta4) vídeo sobre extensões
 Ctrl+K = Apagar linha
 Ctrl+\ = Abre outra janela ao lado
 Ctrl+; = Comentar linha (windows)
-Ctrl+d = alterar várias linhas ao mesmo tempo onde tem a mesma palavra(Ctrl+F2 pega todas)
-Ctrl+Shift+l = seleciona tudo que for igual a seleção atual
+Ctrl+d = seleciona a próxima palavra igual que foi selecionada
+Ctrl+F2 = seleciona todas as palavras iguais a que foi selecionada
 Ctrl+Alt+baixo = alterar várias linhas ao mesmo tempo
 Alt+baixo = manda a linha pra baixo
 Alt+Shift+baixo = copia a linha pra baixo
@@ -28,6 +28,8 @@ Alt+Shift+f = identar tudo
 Ctrl+espaço = mostra os arquivos disponíveis
 Alt+z = quebra as linhas
 Alt+] = dividir tela
+F12 = ir para a definição da função
+Alt+F12 = mostra a função
 
 
 Sites
