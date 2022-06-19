@@ -2,6 +2,7 @@
 //"npm run start:dev" para rodar o script no json com o nodemon
 //"npm install mongoose" - instalar mongo
 //"npm nstall dotenv" - para gerenciar arquivos .env, onde guarda senhas
+//"npm install ejs"
 
 // const { Person } = require("./person");
 const dotenv = require("dotenv");
