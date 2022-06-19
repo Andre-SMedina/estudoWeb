@@ -1,5 +1,20 @@
-const { Person } = require("./person");
+//"npm install nodemon --save-dev" -para atualizar o node a cada alteração
+//"npm run start:dev" para rodar o script no json com o nodemon
+//"npm install mongoose" - instalar mongo
+//"npm nstall dotenv" - para gerenciar arquivos .env, onde guarda senhas
 
-const person = new Person("André");
+// const { Person } = require("./person");
+const dotenv = require("dotenv");
 
-console.log(person.sayMyName());
+const connectToDatabase = require("./src/database/connect");
+
+dotenv.config();
+
+connectToDatabase();
+
+// require("./modules/path");
+// require("./modules/fs");
+// require("./modules/http");
+require("./modules/express");
+
+// const person = new Person("André");

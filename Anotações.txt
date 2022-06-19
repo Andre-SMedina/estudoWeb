@@ -31,6 +31,7 @@ Alt+z = quebra as linhas
 Alt+] = dividir tela
 F12 = ir para a definição da função
 Alt+F12 = mostra a função
+Ctrl+j = abrir terminal
 
 
 Sites
