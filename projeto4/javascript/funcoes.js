@@ -1,3 +1,8 @@
+//para exportar um módulo
+module.exports = { parimp };
+//para usar em outros módulos
+// var modulo = require("./modulo")
+
 function parimp(n) {
   if (n % 2 == 0) {
     return "par";
@@ -23,11 +28,15 @@ let amigo = {
   nome: "José",
   sexo: "M",
   peso: 85,
-  engordar(p = 0) {    
+  engordar(p = 0) {
     if (p > 0) {
-      console.log(`Pesava ${this.peso}Kg e agora está ${this.peso +p}. Você engordou!`);
+      console.log(
+        `Pesava ${this.peso}Kg e agora está ${this.peso + p}. Você engordou!`
+      );
     } else if (p < 0) {
-      console.log(`Pesava ${this.peso}Kg e agora está ${this.peso +p}. Você emagreceu!`);
+      console.log(
+        `Pesava ${this.peso}Kg e agora está ${this.peso + p}. Você emagreceu!`
+      );
     } else {
       console.log(`Você não mudou de peso`);
     }
