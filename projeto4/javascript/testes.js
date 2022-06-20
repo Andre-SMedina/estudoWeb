@@ -1,5 +1,7 @@
-const [a, b, c] = [1, 2, 3];
-let d, e, f;
+const lista = [
+  { id: "kkk", nome: "andre", prof: "tec" },
+  { id: "aaa", nome: "pedro", prof: "cantor" },
+  { id: "sss", nome: "joao", prof: "musico" },
+];
 
-const db = openDatabase("teste", "1.0", "Teste Web SQL Database", 200000);
-console.log(db);
+console.log(lista.find((ident) => ident.id === "aaa"));

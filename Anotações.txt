@@ -13,6 +13,7 @@ extensão: (https://www.youtube.com/watch?v=cFfqrtP0Ta4) vídeo sobre extensões
 "JavaScript (ES6) code snippets" - atalhos pa JS
 "ESlint" - padronizar escrita em JS
 "snippets" - atalho de códigos
+"rest client" - para fazer requisições post e outras para o NODEjs
 
 Ctrl+K = Apagar linha
 Ctrl+\ = Abre outra janela ao lado

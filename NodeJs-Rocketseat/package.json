@@ -1,0 +1,15 @@
+{
+  "name": "curso-rocketseat",
+  "version": "1.0.0",
+  "description": "canal-rocketseat",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "author": "André Luis Silva Medina",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16"
+  }
+}

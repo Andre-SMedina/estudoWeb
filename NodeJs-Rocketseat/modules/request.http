@@ -1,0 +1,14 @@
+POST http://localhost:4002/products
+Content-Type: application/json
+
+{
+    "name": "gato branco",
+    "price": 95
+}
+
+###
+
+GET http://localhost:4002/products
+
+###
+GET http://localhost:4002/products/92006652-da43-476e-8d28-ed01b9215df1

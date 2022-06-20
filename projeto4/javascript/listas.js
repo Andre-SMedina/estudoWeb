@@ -70,11 +70,15 @@ const todos = [
     id: 2,
     description: "Ler",
     isCompleted: true,
-  },{
+  },
+  {
     id: 3,
     description: "Treinar",
     isCompleted: true,
   },
 ];
 
-console.log(todos[2].description)
+// console.log(todos[2].description)
+
+//procura na lista de objetos pelo objeto com id: 2
+console.log(todos.find((e) => e.id === 2));
