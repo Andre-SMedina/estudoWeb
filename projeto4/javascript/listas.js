@@ -82,3 +82,7 @@ const todos = [
 
 //procura na lista de objetos pelo objeto com id: 2
 console.log(todos.find((e) => e.id === 2));
+todos[0] = { id: 3, description: "Estudar programação", isCompleted: false };
+console.log(todos[0]);
+const productIndex = todos.findIndex((product) => product.id === 2);
+console.log(productIndex);

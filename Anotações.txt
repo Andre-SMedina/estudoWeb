@@ -38,3 +38,8 @@ Ctrl+j = abrir terminal
 Sites
 
 https://www.w3c.br/divulgacao/guiasreferencia/css2/
+
+mudar política de scripts no windows(shell admin):
+
+ver política atual: Get-ExecutionPolicy
+alterar políta para sem restricção: Set-ExecutionPolicy -ExecutionPolicy Bypass

@@ -1,9 +1,10 @@
 POST http://localhost:4002/products
 Content-Type: application/json
 
+//precisa ter esse espaço depois de Content-Type
 {
-    "name": "gato branco",
-    "price": 95
+    "name": "rato azul",
+    "price": 35
 }
 
 ###
@@ -11,4 +12,16 @@ Content-Type: application/json
 GET http://localhost:4002/products
 
 ###
-GET http://localhost:4002/products/92006652-da43-476e-8d28-ed01b9215df1
+GET http://localhost:4002/products/ac471b48-dddf-464f-861c-97b65354e3a7
+
+###
+PUT  http://localhost:4002/products/c51189c5-94e6-4309-b3e1-469182932dd3
+Content-Type: application/json
+
+{
+    "name": "gato fff",
+    "price": 40
+}
+
+###
+DELETE   http://localhost:4002/products/c51189c5-94e6-4309-b3e1-469182932dd3
