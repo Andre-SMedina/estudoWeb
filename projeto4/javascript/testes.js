@@ -1,7 +1,6 @@
-const lista = [
-  { id: "kkk", nome: "andre", prof: "tec" },
-  { id: "aaa", nome: "pedro", prof: "cantor" },
-  { id: "sss", nome: "joao", prof: "musico" },
-];
+const fs = require("fs");
 
-console.log(lista.find((ident) => ident.id === "aaa"));
+fs.readFile('./testeArrow.txt', () => {
+  // console.log(a);
+  console.log(String('oi'));
+})
