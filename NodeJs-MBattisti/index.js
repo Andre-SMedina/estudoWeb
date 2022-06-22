@@ -1,9 +1,8 @@
 //config inicial
 const express = require("express");
 const app = express();
-const dotenv = require("dotenv");
+require("dotenv").config();
 const mongoose = require("mongoose");
-dotenv.config();
 
 // forma de ler JSON / middlewares
 app.use(
