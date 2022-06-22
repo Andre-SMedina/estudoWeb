@@ -35,11 +35,15 @@ Alt+F12 = mostra a função
 Ctrl+j = abrir terminal
 
 
-Sites
+* Sites
 
-https://www.w3c.br/divulgacao/guiasreferencia/css2/
+- https://www.w3c.br/divulgacao/guiasreferencia/css2/
 
-mudar política de scripts no windows(shell admin):
+* mudar política de scripts no windows(shell admin):
 
-ver política atual: Get-ExecutionPolicy
-alterar políta para sem restricção: Set-ExecutionPolicy -ExecutionPolicy Bypass
+- ver política atual do windows: Get-ExecutionPolicy
+- alterar políta para sem restricção: Set-ExecutionPolicy -ExecutionPolicy Bypass
+
+* NODEjs
+- para hospedar site estático: npm iinstall -g surge---> depois digita surge na pasta que já vai hospedar
+- para hospedar APIs: site heroku
