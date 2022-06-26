@@ -5,6 +5,7 @@
 * npm install nodemon. depois vai em package.json, em scripts, muda node para nodemon. Pra rodar é npm start
 * npm install helmet - para protejer de alguns ataques
 * artillery para testar limite de acesso ao sistema
+* lodash--> para trabalhar com arrays
 
 ----banco de dados mongodb----
 -Baixe o arquivo zip "Download MongoDB Community Server"
