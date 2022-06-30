@@ -38,6 +38,7 @@ router.get("/:id", async (req, res) => {
   const id = req.params.id;
   try {
     const person = await Person.findOne({ _id: id });
+    console.log(person);
     if (!person)
       return res.status(422).json({ message: "Usuário não encontrado." });
     res.status(200).json(person);
