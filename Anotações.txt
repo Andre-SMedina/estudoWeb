@@ -14,6 +14,8 @@ extensão: (https://www.youtube.com/watch?v=cFfqrtP0Ta4) vídeo sobre extensões
 "ESlint" - padronizar escrita em JS
 "snippets" - atalho de códigos
 "rest client" - para fazer requisições post e outras para o NODEjs
+"Material Icon Theme" - Muda os icones dos arquivos e pastas
+"MySQL" - para ver banco de dados
 
 Ctrl+K = Apagar linha
 Ctrl+\ = Abre outra janela ao lado
