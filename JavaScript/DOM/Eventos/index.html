@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="evento1" class="container">
+      <button onclick="mudar()">Mudar imagem</button>
+      <img id="img1" src="../../Imagens/ex1.jpg" alt="" />
+    </div>
+
+    <div id="evento2" class="container">
+      <button>Mudar texto</button>
+      <h2>Texto original</h2>
+    </div>
+
+    <div id="evento3" class="container">
+      <h2 id="tit1">Título 1</h2>
+      <h2 id="tit2">Título 2</h2>
+      <button id="add">Adcionar evento</button>
+      <button id="exec">Executar evento</button>
+      <button id="remove">Remover evento</button>
+    </div>
+
+    <div id="evento4" class="container">
+      <h1>Eventos Mouse</h1>
+      <button id="click" style="display: inline">click</button>
+      <button id="down" style="display: inline">down</button>
+      <button id="up" style="display: inline">up</button>
+      <button id="enter" style="display: inline">enter</button><br />
+      <button id="leave" style="display: inline">leave</button>
+      <button id="move" style="display: inline">move</button>
+      <button id="doubleClick" style="display: inline">Double</button>
+      <button id="dirbutton" style="display: inline">Direito</button>
+      <h2>Eventos</h2>
+    </div>
+
+    <div class="container" id="evento5">
+      <h1>Eventos Teclado</h1>
+      <input
+        type="text"
+        placeholder="Pressione uma tecla aqui"
+        style="padding: 5px"
+      />
+      <h2>Mostra tecla</h2>
+      <input type="text" placeholder="Digite algo aqui" style="padding: 5px" />
+      <h2>Mostra texto</h2>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

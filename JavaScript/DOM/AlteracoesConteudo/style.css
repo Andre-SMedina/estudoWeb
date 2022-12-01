@@ -1,0 +1,32 @@
+ul > li:last-child {
+  color: yellow;
+}
+
+img {
+  width: 200px;
+}
+.alerta {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 2em;
+  background-color: rgb(255, 0, 0);
+}
+
+#testeAdd {
+  background-color: rgb(255, 255, 255);
+  display: inline-block;
+  height: 50px;
+}
+
+.estilo1 {
+  background-color: rgb(2, 2, 180);
+  width: 300px;
+  padding: 10px;
+  text-align: center;
+}
+.estilo2 {
+  border: solid 2px black;
+  border-radius: 10px;
+  font-size: 1.3em;
+  color: white;
+}

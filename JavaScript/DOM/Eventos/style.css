@@ -1,0 +1,44 @@
+h1,
+h2 {
+  margin: 5px;
+}
+
+body {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+img {
+  margin: 0 auto;
+  display: block;
+  margin-top: 20px;
+  width: 200px;
+}
+
+button {
+  padding: 5px 10px;
+  font-weight: bold;
+  font-size: 1.2em;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px black;
+  margin-top: 5px;
+  display: block;
+  margin: 5px auto;
+}
+button:hover {
+  background-color: rgb(192, 192, 192);
+}
+
+button:active {
+  scale: 98%;
+  background-color: rgb(246, 246, 246);
+}
+
+.container {
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(186, 112, 255);
+  min-width: 300px;
+  min-height: 200px;
+}

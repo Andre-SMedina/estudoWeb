@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulários</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="parabens.html" method="post" name="form1">
+      <div class="container">
+        <label>Adivinhe o número</label>
+        <input type="text" name="number" />
+      </div>
+
+      <input type="submit" value="Enviar" />
+      <h3 id="numberOk"></h3>
+    </form>
+
+    <form action="#" method="get" name="form1">
+      <div class="container">
+        <label for="usuario">Nome do usuário: </label>
+        <input type="text" name="usuario2" autofocus />
+      </div>
+      <div class="container">
+        <label for="senha">Senha: </label>
+        <input type="password" name="senha2" />
+      </div>
+    </form>
+
+    <form action="#" method="get">
+      <div class="container">
+        <label for="tarefa">Tarefa</label>
+        <input type="text" name="tarefa" />
+      </div>
+      <div class="container">
+        <label for="duracao">Quanto tempo</label>
+        <select name="duracao">
+          <option value=""></option>
+          <option value="1 dia">1 dia</option>
+          <option value="2 dias">2 dias</option>
+          <option value="3 dias">3 dias</option>
+        </select>
+      </div>
+      <h3 id="texto1"></h3>
+      <h3 id="texto2"></h3>
+    </form>
+
+    <form action="#" method="post">
+      <div class="container">
+        <label for="">Teste 'input'</label>
+        <input type="text" id="introduzir" placeholder="Digite algo aqui" />
+        <h3 id="texto3"></h3>
+      </div>
+    </form>
+
+    <form action="#" method="post">
+      <div class="container">
+        <label for="">Proibido copiar o texto</label>
+        <p type="text" id="copiar">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt,
+          quibusdam dolores? Ab voluptatibus quo sed.
+        </p>
+      </div>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
